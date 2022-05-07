@@ -10,10 +10,7 @@
 }
 
 body {
-    background: #485563;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background-color: rgb(10, 10, 10);
     width: auto;
     display: flex;
     flex-direction: column;
@@ -23,54 +20,87 @@ body {
     height: 100vh;
 }
 
-img {
-    width: 90px;
-    height: auto;
-    margin-top: 20px;
-}
-
-h1 {
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
 .global-container {
-    width: 90%;
+    width: 100%;
     height: auto;
-    max-height: 80vh;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    max-height: 90vh;
+    gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.links {
+.profil-pic {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+.subtext {
+    font-size: 0.8rem;
+    color: #b2b2b2;
+}
+
+.global-container a {
+    text-decoration: none;
+}
+
+.global-container a img {
+    width: 40px;
+    height: auto;
+}
+.global-container .buttons {
+    width: 250px;
+    height: 80px;
+    border-radius: 5px;
+    margin: 0 auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 100px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    border-radius: 5px;
+
+    background-color: red;
 }
 
-span {
-    margin: 0 20px;
-    font-size: 1.2rem;
-    border-bottom: 2px solid #ffffff;
-    
+.global-container .buttons:hover {
+    filter: brightness(110%);
 }
 
-.icons{
-    height: 40px;
-    width: auto;
-    margin: 0 20px;
+.intro {
+    width: 250px;
+    height: 80px;
+    margin-top: 30px;
 }
 
-.icon-author {
+.global-container .linkedin {
+    background-color: #0b66c3;
+}
+
+.global-container .tel {
+    background-color: #25ae88;
+}
+
+.global-container .mailto {
+    background-color: #ffc107;
+}
+
+.contact-type {
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+.contact-info {
+    font-size: 0.75rem;
+    color: #696969;
+}
+
+.copyright {
+    font-size: 0.75rem;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
-
