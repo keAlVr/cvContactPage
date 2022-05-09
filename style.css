@@ -49,10 +49,17 @@ h1 {
     text-decoration: none;
 }
 
+.global-container :nth-child(6) {
+    margin-top: 30px;
+    text-decoration: underline;
+    color: #0080ff;
+}
+
 .global-container a img {
     width: 40px;
     height: auto;
 }
+
 .global-container .buttons {
     width: 250px;
     height: 80px;
